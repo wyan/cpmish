@@ -114,7 +114,7 @@ definerule("binslice",
 			outleaves = { e.name..".img" },
 			ins = e.src,
 			commands = {
-				"dd if=%{ins} of=%{outs} status=none bs=1 skip="..e.start.." count="..e.length
+				"dd if=%{ins} of=%{outs} bs=1 skip="..e.start.." count="..e.length
 			}
 		}
 	end

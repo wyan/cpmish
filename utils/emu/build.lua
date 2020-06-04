@@ -20,7 +20,7 @@ normalrule {
     ins = { "+biosbdos_memimg" },
     outleaves = { "biosbdos.cim" },
     commands = {
-        "dd if=%{ins[1]} of=%{outs} status=none bs=1 skip=63232"
+        "dd if=%{ins[1]} of=%{outs} bs=1 skip=63232"
     }
 }
 
